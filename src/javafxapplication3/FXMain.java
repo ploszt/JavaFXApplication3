@@ -10,18 +10,19 @@ import javafx.stage.Stage;
  *
  * @author ploszt
  */
-public class JavaFXApplication3 extends Application {
+public class FXMain extends Application {
     
     @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXML.fxml"));
-        
+    public void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("/javafxapplication3/FXML.fxml"));
+
         Scene scene = new Scene(root);
         
-        stage.setScene(scene);
-        stage.show();
-    }
+        primaryStage.setScene(scene);
 
+        primaryStage.show();
+    }
+    
     /**
      * @param args the command line arguments
      */
